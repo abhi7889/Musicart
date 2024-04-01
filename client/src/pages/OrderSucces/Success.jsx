@@ -7,7 +7,7 @@ import success from "/images/confetti 1.png";
 import { clearCart } from "../../redux/Slices/cartSlice";
 import MobileAuthHeader from "../../MobileComponents/MobileHeader/MobileAuthHeader";
 import MobileFooter from "../../MobileComponents/MobileFooter/MobileFooter";
-import logo from "/images/logo.png";
+import logo from "/images/logo.svg";
 
 const Success = () => {
   const { user } = useSelector((state) => state.auth);
@@ -35,10 +35,10 @@ const Success = () => {
       <div className={styles.success_container}>
         <img src={success} alt="SuccessLogo" />
         <h2>Order is placed successfully!</h2>
-        <p>You will be receiving a confirmation email with order details</p>
+        <p>You  will be receiving a confirmation email with order details</p>
 
         <button className={styles.back_btn}>
-          Thanks for Shopping with Us !!
+        Go back to Home page
         </button>
 
         {isMobile && <MobileFooter />}

@@ -5,7 +5,7 @@ import { ToastContainer, Zoom } from "react-toastify";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Signup from "./pages/Auth/SignUp/SignUp";
-import Login from "./pages/Auth/Login/Login";
+import Login from "./pages/auth/Login/Login";
 import Home from "./pages/home/Home";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";

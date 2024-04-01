@@ -59,8 +59,8 @@ function Checkout() {
                 <div className={styles.address}>
                   <p>{user.name}</p>
                   <p>104</p>
-                  <p>kk hh nagar lucknow</p>
-                  <p>Uttar pradesh 226025</p>
+                  <p>Hatlimorh Kathua</p>
+                  <p>Jammu and Kashmir 184102 </p>
                 </div>
               </div>
               <div className={styles.payment_details}>

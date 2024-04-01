@@ -16,6 +16,7 @@ import { Footer, ProductDetails } from "./Components/index";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
+
   const dispatch = useDispatch();
   const { isMobile } = useSelector((state) => state.ui);
 

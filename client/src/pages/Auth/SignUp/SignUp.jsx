@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import styles from "./SignUp.module.css";
 import { signupUser } from "../../../redux/Slices/authSlice";
 import MobileAuthHeader from "../../../MobileComponents/MobileHeader/MobileAuthHeader";
-import logo from "/images/logo.svg";
+import logo from "./images/logo.svg";
 
 function Signup() {
   const [name, setName] = useState("");

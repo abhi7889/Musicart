@@ -4,7 +4,7 @@ import { loginUser } from "../../../redux/Slices/authSlice";
 import { Link, useNavigate } from "react-router-dom";
 
 import styles from "./Login.module.css";
-import logo from "/images/logo.svg";
+import logo from "./images/logo.svg";
 import MobileAuthHeader from "../../../MobileComponents/MobileHeader/MobileAuthHeader";
 
 function Login() {

@@ -18,7 +18,7 @@ export const loginUser = createAsyncThunk(
   async (credentials, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-       "http://localhost:4000/auth/login",
+        `${import.meta.env.VITE_SERVER_HOST}/auth/login`,
         credentials
       );
 
@@ -35,7 +35,7 @@ export const signupUser = createAsyncThunk(
   async (credentials, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/signup",
+        `${import.meta.env.VITE_SERVER_HOST}/auth/signup`,
         credentials
       );
 
@@ -45,6 +45,7 @@ export const signupUser = createAsyncThunk(
     }
   }
 );
+
 
 const authSlice = createSlice({
   name: "auth",

@@ -32,3 +32,13 @@
   display: flex;
   align-items: center;
 }
+.logo_container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.7rem;
+  color: #fff;
+}
+.logo_container img {
+  width: 2.5rem;
+}

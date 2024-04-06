@@ -6,6 +6,7 @@ import { logoutUser } from "../../redux/Slices/authSlice";
 import styles from "./MobileFooter.module.css";
 import homeIcon from "/images/icons8-home-50.png";
 import cartIcon from "/images/cartIcon.png";
+import invoiceIcon from "/images/invoice.svg";
 import userIcon from "/images/icons8-user-50.png";
 
 import Swal from "sweetalert2";
@@ -17,7 +18,7 @@ const MobileFooter = () => {
 
   const [activeMenu, setActiveMenu] = useState("home");
 
-  const handleMenulick = (item) => {
+  const handleMenuClick = (item) => {
     setActiveMenu(item);
   };
 
@@ -49,7 +50,7 @@ const MobileFooter = () => {
 
       <div
         onClick={() => {
-          handleMenulick("cart");
+          handleMenuClick("cart");
           gotToCart();
         }}
         className={`${styles.btn} ${
@@ -62,7 +63,20 @@ const MobileFooter = () => {
 
       <div
         onClick={() => {
-          handleMenulick("user");
+          handleMenuClick("invoice");
+        }}
+        className={`${styles.btn} ${
+          activeMenu === "invoice" ? `${styles.active}` : ""
+        }`}
+      >
+        {/* Your new button goes here */}
+        <img src={invoiceIcon} alt="profileIcon" />
+        <p>Invoice</p>
+      </div>
+
+      <div
+        onClick={() => {
+          handleMenuClick("user");
         }}
         className={`${styles.btn} ${
           activeMenu === "user" ? `${styles.active}` : ""
@@ -85,7 +99,7 @@ const MobileFooter = () => {
 
                 navigate("/login");
               }
-              handleMenulick("user");
+              handleMenuClick("user");
             });
           }}
           src={userIcon}
